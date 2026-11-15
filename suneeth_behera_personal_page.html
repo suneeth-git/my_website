@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080b12">
+<meta name="description" content="Suneeth Behera — Product Manager building trusted platforms, onboarding experiences and compliance products.">
+<title>Suneeth Behera | Product Manager</title>
+<style>
+:root{
+  --bg:#080b12;--panel:#101621;--panel2:#141d2a;--text:#f4f7fb;--muted:#9aa7b8;
+  --line:rgba(255,255,255,.10);--cyan:#72e5d2;--blue:#8aa7ff;--lime:#c8f36a;
+  --radius:24px;--max:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 75% 0%,rgba(78,111,255,.16),transparent 34%),radial-gradient(ellipse at 8% 35%,rgba(65,220,190,.09),transparent 30%),linear-gradient(180deg,#080b12,#0a1019 60%,#080b12)}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(8,11,18,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:11px;font-weight:750;letter-spacing:-.03em}
+.mark{width:34px;height:34px;border-radius:12px;background:linear-gradient(135deg,var(--cyan),#8da6ff);display:grid;place-items:center;color:#071016;font-weight:900}
+.navlinks{display:flex;align-items:center;gap:28px;color:var(--muted);font-size:14px}
+.navlinks a:hover{color:var(--text)}
+.nav-cta,.primary{background:var(--text);color:#081019;padding:11px 17px;border-radius:999px;font-size:14px;font-weight:750;transition:.2s}
+.nav-cta:hover,.primary:hover{transform:translateY(-2px);box-shadow:0 8px 30px #ffffff20}
+.menu{display:none;background:none;border:1px solid var(--line);color:white;border-radius:12px;padding:8px 11px}
+.hero{padding:88px 0 70px;display:grid;grid-template-columns:1.3fr .7fr;gap:48px;align-items:center}
+.eyebrow{display:inline-flex;gap:9px;align-items:center;color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 15px var(--lime)}
+h1{font-size:clamp(48px,7vw,82px);line-height:.99;letter-spacing:-.075em;margin:22px 0 22px;font-weight:760}
+h1 span{background:linear-gradient(100deg,var(--cyan),#a6b8ff 72%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:18px;color:#b6c1d0;max-width:680px;line-height:1.75}
+.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.secondary{border:1px solid var(--line);padding:10px 17px;border-radius:999px;color:var(--text);font-size:14px;font-weight:650}
+.secondary:hover{border-color:#ffffff55;background:#ffffff08}
+.hero-card{position:relative;border:1px solid var(--line);border-radius:30px;padding:25px;background:linear-gradient(145deg,#182333dd,#0d131ddd);box-shadow:0 30px 90px #0008;overflow:hidden}
+.hero-card:before{content:"";position:absolute;width:230px;height:230px;border-radius:50%;background:#71e5d22b;filter:blur(50px);right:-80px;top:-90px}
+.card-top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:12px;position:relative}
+.avatar{height:58px;width:58px;border-radius:20px;background:linear-gradient(135deg,#6fe4d1,#879cff);color:#07121a;display:grid;place-items:center;font-size:23px;font-weight:850;margin:28px 0 16px}
+.hero-card h2{font-size:23px;letter-spacing:-.04em;margin:0}
+.role{color:var(--muted);font-size:14px;margin-top:4px}
+.location{display:flex;gap:8px;align-items:center;color:#c3cfdd;font-size:13px;margin-top:20px}
+.card-rule{height:1px;background:var(--line);margin:23px 0}
+.mini-stats{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.stat strong{display:block;font-size:25px;letter-spacing:-.05em}
+.stat span{color:var(--muted);font-size:12px}
+.section{padding:70px 0}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:28px}
+.kicker{color:var(--cyan);font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+h2.section-title{font-size:clamp(30px,4vw,44px);letter-spacing:-.055em;line-height:1.1;margin:8px 0 0}
+.section-note{max-width:420px;color:var(--muted);font-size:14px}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.metric{background:linear-gradient(145deg,#141e2b,#0e151f);border:1px solid var(--line);border-radius:20px;padding:22px;min-height:142px}
+.metric strong{font-size:34px;letter-spacing:-.06em;display:block;color:var(--cyan)}
+.metric span{font-size:13px;color:var(--muted);display:block;margin-top:8px;line-height:1.45}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.panel h3{margin:0 0 12px;font-size:18px;letter-spacing:-.03em}
+.panel p{margin:0;color:var(--muted);font-size:14px;line-height:1.8}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:17px}
+.chip{font-size:12px;padding:7px 11px;border-radius:999px;background:#ffffff08;border:1px solid var(--line);color:#c9d4e2}
+.experience{position:relative;display:grid;gap:14px}
+.job{display:grid;grid-template-columns:205px 1fr;gap:28px;padding:25px;background:var(--panel);border:1px solid var(--line);border-radius:22px}
+.job-meta{border-right:1px solid var(--line);padding-right:18px}
+.job-meta .period{color:var(--cyan);font-size:12px;font-weight:750}
+.job-meta h3{font-size:18px;margin:8px 0 1px;letter-spacing:-.03em}
+.job-meta p{color:var(--muted);font-size:13px;margin:0}
+.job-content h4{margin:0 0 12px;font-size:16px}
+.job-content ul{padding-left:18px;margin:0;color:#b5c1d0;font-size:14px}
+.job-content li{padding:0 0 9px 3px}
+.job-content li:last-child{padding-bottom:0}
+.job-content li::marker{color:var(--cyan)}
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.edu{padding:22px;border-radius:20px;background:var(--panel);border:1px solid var(--line)}
+.edu .year{font-size:12px;color:var(--cyan);font-weight:750}
+.edu h3{margin:8px 0 3px;font-size:17px}
+.edu p{margin:0;color:var(--muted);font-size:13px}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.skill-card{padding:22px;border-radius:20px;background:var(--panel);border:1px solid var(--line)}
+.skill-card h3{font-size:15px;margin:0 0 13px}
+.skill-card p{font-size:13px;color:var(--muted);margin:0;line-height:1.8}
+.contact{border:1px solid #ffffff18;border-radius:28px;padding:38px;background:linear-gradient(115deg,#17283a,#111a29 55%,#172137);display:flex;align-items:center;justify-content:space-between;gap:30px;overflow:hidden;position:relative}
+.contact:after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;right:12%;top:-180px;background:#75e3d355;filter:blur(45px)}
+.contact h2{font-size:clamp(28px,4vw,42px);letter-spacing:-.055em;line-height:1.1;margin:8px 0 12px;position:relative}
+.contact p{color:#b3c1d1;margin:0;position:relative}
+.contact-actions{display:flex;gap:10px;flex-wrap:wrap;position:relative;z-index:1}
+footer{padding:28px 0 40px;color:#758397;font-size:12px;display:flex;justify-content:space-between;gap:15px;border-top:1px solid var(--line)}
+footer a{color:#b8c5d5}
+@media(max-width:850px){
+ .hero{grid-template-columns:1fr;padding-top:65px}.hero-card{max-width:520px}
+ .metrics{grid-template-columns:repeat(2,1fr)}.skills-grid{grid-template-columns:1fr 1fr}
+ .job{grid-template-columns:1fr;gap:15px}.job-meta{border-right:0;border-bottom:1px solid var(--line);padding:0 0 14px}
+}
+@media(max-width:600px){
+ .wrap{width:min(100% - 30px,var(--max))}.nav{height:66px}.navlinks{display:none;position:absolute;top:65px;left:0;right:0;background:#0d131e;padding:20px 22px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:17px}
+ .navlinks.open{display:flex}.menu{display:block}.nav-cta{display:none}
+ .hero{padding:52px 0 45px;gap:30px}h1{font-size:54px}.lead{font-size:16px}
+ .section{padding:48px 0}.section-head{display:block}.section-note{margin-top:12px}
+ .metrics{gap:9px}.metric{padding:16px;min-height:125px}.metric strong{font-size:28px}
+ .about-grid,.edu-grid,.skills-grid{grid-template-columns:1fr}.panel{padding:21px}
+ .job{padding:20px}.contact{padding:27px;display:block}.contact-actions{margin-top:22px}
+ footer{display:block}footer span{display:block;margin-top:8px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Suneeth Behera home"><span class="mark">S</span><span>Suneeth Behera</span></a>
+    <nav class="navlinks" id="navlinks" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#impact">Impact</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="mailto:suneethkb2017@email.iimcal.ac.in">Let's connect ↗</a>
+    <button class="menu" id="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="wrap hero">
+    <div>
+      <div class="eyebrow"><span class="dot"></span> Product Manager · Hyderabad, India</div>
+      <h1>Building products<br>that make <span>complexity</span><br>feel simple.</h1>
+      <p class="lead">I’m Suneeth — a Product Manager with 11+ years of experience across platform products, KYC and onboarding, API platforms, risk management and regulatory compliance. I turn complex business and regulatory needs into reliable, customer-centred products.</p>
+      <div class="hero-actions">
+        <a class="primary" href="#experience">Explore my work ↘</a>
+        <a class="secondary" href="https://www.linkedin.com/in/suneeth-behera-22a81445" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="secondary" href="mailto:suneethkb2017@email.iimcal.ac.in">Email me ↗</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <div class="card-top"><span>PROFILE SNAPSHOT</span><span>01 / 04</span></div>
+      <div class="avatar">SB</div>
+      <h2>Suneeth Behera</h2>
+      <div class="role">Product Manager at Entain India</div>
+      <div class="location">⌖ Hyderabad, Telangana, India</div>
+      <div class="card-rule"></div>
+      <div class="mini-stats">
+        <div class="stat"><strong>11+</strong><span>Years of experience</span></div>
+        <div class="stat"><strong>5+</strong><span>Years in product delivery</span></div>
+        <div class="stat"><strong>37M</strong><span>Daily platform events</span></div>
+        <div class="stat"><strong>99.99%</strong><span>Platform uptime</span></div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="wrap section" id="impact">
+    <div class="section-head">
+      <div><div class="kicker">Selected outcomes</div><h2 class="section-title">Impact, in numbers.</h2></div>
+      <p class="section-note">A few measurable outcomes from building and improving products across regulated, data-intensive environments.</p>
+    </div>
+    <div class="metrics">
+      <div class="metric"><strong>39% → 46%</strong><span>Brazil registration-to-verified conversion</span></div>
+      <div class="metric"><strong>37M</strong><span>Daily events handled by compliance reporting platform</span></div>
+      <div class="metric"><strong>50%</strong><span>Reduction in verification failures through onboarding improvements</span></div>
+      <div class="metric"><strong>$2M</strong><span>Estimated annual client savings from FINRA compliance work</span></div>
+    </div>
+  </section>
+
+  <section class="wrap section" id="about">
+    <div class="section-head">
+      <div><div class="kicker">A little about me</div><h2 class="section-title">Strategy meets execution.</h2></div>
+    </div>
+    <div class="about-grid">
+      <article class="panel">
+        <h3>How I work</h3>
+        <p>I bring together customer discovery, data-driven decision making and cross-functional leadership to shape product direction and deliver outcomes. My experience spans the full journey — from understanding regulatory and operational problems to defining requirements, aligning teams and improving live products.</p>
+      </article>
+      <article class="panel">
+        <h3>What I focus on</h3>
+        <p>Building dependable platforms and reducing friction in compliance-sensitive customer journeys, while balancing customer experience, operational efficiency and regulatory expectations.</p>
+        <div class="chips"><span class="chip">Product strategy</span><span class="chip">Platform products</span><span class="chip">KYC & onboarding</span><span class="chip">API platforms</span><span class="chip">Risk & compliance</span><span class="chip">Agile delivery</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="wrap section" id="experience">
+    <div class="section-head">
+      <div><div class="kicker">Career journey</div><h2 class="section-title">Experience that compounds.</h2></div>
+      <p class="section-note">Product management, consulting, financial services and engineering — a multidisciplinary foundation for solving complex problems.</p>
+    </div>
+    <div class="experience">
+      <article class="job">
+        <div class="job-meta"><div class="period">MAY 2022 — PRESENT</div><h3>Entain India</h3><p>Product Manager<br>Hyderabad, India</p></div>
+        <div class="job-content"><h4>Platform products · KYC · Onboarding · Compliance</h4>
+          <ul>
+            <li>Led integration of Jumio’s no-document KYC capability in Brazil, improving registration-to-verified conversion from 39% to 46% and achieving 90%+ completion.</li>
+            <li>Designed an event-driven compliance and KYC reporting platform handling 37 million daily events at sub-100ms latency, with 99.99% uptime and zero P01 incidents for 24+ months. The architecture became a reference for other markets.</li>
+            <li>Experimented with Google autocomplete in onboarding, reducing verification failures by 50%, shortening completion time and lowering user drop-off.</li>
+            <li>Led delivery of duplicate-profile detection logic to meet Spain’s 2023 Royal Decree, ensuring compliance across three labels.</li>
+            <li>Used customer discovery and data to remove 30% of low-value roadmap items and improve resource allocation.</li>
+            <li>Built a daily re-verification job and an operations self-service tool to address onboarding risk and compliance blind spots.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="job">
+        <div class="job-meta"><div class="period">JAN 2021 — FEB 2022</div><h3>EY</h3><p>Senior Consultant<br>Pune, India</p></div>
+        <div class="job-content"><h4>Liquidity & margin reporting transformation</h4>
+          <ul>
+            <li>Led functional analysis and requirements design for a large-scale reporting transformation supporting regulatory compliance across 5+ business units and global markets.</li>
+            <li>Standardised reporting workflows with global stakeholders, reducing gaps by 25% and improving data availability by 30% through an enterprise data lake.</li>
+            <li>Authored BRDs, FRDs and RTMs; supported UAT and defect resolution, contributing to on-time releases and around 20% fewer post-release defects.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="job">
+        <div class="job-meta"><div class="period">JUN 2017 — JAN 2021</div><h3>Cognizant</h3><p>Consultant<br>Pune, India</p></div>
+        <div class="job-content"><h4>Financial services · Regulatory technology · Product delivery</h4>
+          <ul>
+            <li>Automated Solvency II regulatory reporting using Tableau and SQL dashboards, reducing manual effort by 40%.</li>
+            <li>Led a FINRA compliance project covering client-data consistency, rules and dashboards; managed 45 Jira user stories and helped avoid $1.5M in penalties and save an estimated $2M annually.</li>
+            <li>Managed end-to-end delivery of a client feedback platform, from process design and vendor coordination to wireframes and UX metrics, improving NPS to 30.</li>
+            <li>Developed process and data models for standardised ISO 20022 (MX schema) messaging, improving mapping efficiency by around 35%.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="job">
+        <div class="job-meta"><div class="period">DEC 2014 — JUN 2015</div><h3>State Bank of India</h3><p>Officer<br>Siliguri, India</p></div>
+        <div class="job-content"><h4>Banking operations</h4>
+          <ul>
+            <li>Handled responsibilities across seven business units in six months, including Alternate Channels, Credit and Personal Banking.</li>
+            <li>Worked on cheque clearance, SME drawing-power sheets and monitoring utilisation of credit extended to customers.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="job">
+        <div class="job-meta"><div class="period">JUL 2013 — DEC 2014</div><h3>Subros Limited</h3><p>Engineer — R&amp;D<br>Pune, India</p></div>
+        <div class="job-content"><h4>Automotive HVAC · Mechanical design</h4>
+          <ul>
+            <li>Designed and modified automotive air conditioners and heaters for multiple vehicle models.</li>
+            <li>Reduced kinematic operating torque by 50% through CAD design and geometry improvements.</li>
+            <li>Reduced drawing errors by 25%, helping prevent downstream issues and saving engineering time and cost.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="wrap section" id="education">
+    <div class="section-head"><div><div class="kicker">Learning & development</div><h2 class="section-title">Education & credentials.</h2></div></div>
+    <div class="edu-grid">
+      <article class="edu"><div class="year">2015 — 2017</div><h3>Indian Institute of Management, Calcutta</h3><p>Master of Business Administration (MBA)</p></article>
+      <article class="edu"><div class="year">2009 — 2013</div><h3>National Institute of Technology, Hamirpur</h3><p>B.Tech, Mechanical Engineering</p></article>
+    </div>
+    <div class="skills-grid" style="margin-top:14px">
+      <article class="skill-card"><h3>Certifications & courses</h3><p>SAFe Agilist Certification<br>The Complete Product Management Course<br>Advanced Excel<br>Agile<br>Complete SQL Bootcamp</p></article>
+      <article class="skill-card"><h3>Tools & methods</h3><p>Jira · SQL · KYC Verification<br>Agile product delivery<br>Requirements & stakeholder management<br>Data-driven product decisions</p></article>
+      <article class="skill-card"><h3>Languages</h3><p>English — Native or Bilingual<br>Oriya · Bengali · Hindi</p></article>
+    </div>
+  </section>
+
+  <section class="wrap section" id="contact">
+    <div class="contact">
+      <div><div class="kicker">Have a product challenge?</div><h2>Let's build something<br>that matters.</h2><p>Open to conversations, ideas and opportunities.</p></div>
+      <div class="contact-actions">
+        <a class="primary" href="mailto:suneethkb2017@email.iimcal.ac.in">Get in touch ↗</a>
+        <a class="secondary" href="https://www.linkedin.com/in/suneeth-behera-22a81445" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="wrap"><span>© <span id="year"></span> Suneeth Behera</span><span>Designed as a single-page profile · <a href="#top">Back to top ↑</a></span></footer>
+<script>
+const menu = document.getElementById('menu');
+const nav = document.getElementById('navlinks');
+menu.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  menu.setAttribute('aria-expanded', String(open));
+});
+nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+  nav.classList.remove('open'); menu.setAttribute('aria-expanded','false');
+}));
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
